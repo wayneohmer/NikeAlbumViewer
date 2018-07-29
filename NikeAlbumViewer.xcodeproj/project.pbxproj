@@ -16,11 +16,11 @@
 		2B2E5108210CE84A008CBC3C /* NikeAlbumViewerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2E5107210CE84A008CBC3C /* NikeAlbumViewerTests.swift */; };
 		2B2E5113210CE84A008CBC3C /* NikeAlbumViewerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2E5112210CE84A008CBC3C /* NikeAlbumViewerUITests.swift */; };
 		2B2E5121210CE976008CBC3C /* NAAlbumModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2E5120210CE976008CBC3C /* NAAlbumModel.swift */; };
-		2B2E5123210CFAF7008CBC3C /* NAFeedDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2E5122210CFAF7008CBC3C /* NAFeedDecoder.swift */; };
+		2B2E5123210CFAF7008CBC3C /* NARssManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2E5122210CFAF7008CBC3C /* NARssManager.swift */; };
 		2B2E5125210D0371008CBC3C /* NAAlbumTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2E5124210D0371008CBC3C /* NAAlbumTableViewCell.swift */; };
 		2B2E5163210D2F68008CBC3C /* testData.json in Resources */ = {isa = PBXBuildFile; fileRef = 2B2E5162210D2F68008CBC3C /* testData.json */; };
 		2B2E5164210D3261008CBC3C /* testData.json in Resources */ = {isa = PBXBuildFile; fileRef = 2B2E5162210D2F68008CBC3C /* testData.json */; };
-		2B2E5166210D5561008CBC3C /* NAUIView+DropShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2E5165210D5561008CBC3C /* NAUIView+DropShadow.swift */; };
+		2B2E5166210D5561008CBC3C /* NAUIImageView+DropShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2E5165210D5561008CBC3C /* NAUIImageView+DropShadow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,10 +56,10 @@
 		2B2E5112210CE84A008CBC3C /* NikeAlbumViewerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NikeAlbumViewerUITests.swift; sourceTree = "<group>"; };
 		2B2E5114210CE84A008CBC3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2B2E5120210CE976008CBC3C /* NAAlbumModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NAAlbumModel.swift; sourceTree = "<group>"; };
-		2B2E5122210CFAF7008CBC3C /* NAFeedDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NAFeedDecoder.swift; sourceTree = "<group>"; };
+		2B2E5122210CFAF7008CBC3C /* NARssManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NARssManager.swift; sourceTree = "<group>"; };
 		2B2E5124210D0371008CBC3C /* NAAlbumTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NAAlbumTableViewCell.swift; sourceTree = "<group>"; };
 		2B2E5162210D2F68008CBC3C /* testData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = testData.json; sourceTree = "<group>"; };
-		2B2E5165210D5561008CBC3C /* NAUIView+DropShadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NAUIView+DropShadow.swift"; sourceTree = "<group>"; };
+		2B2E5165210D5561008CBC3C /* NAUIImageView+DropShadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NAUIImageView+DropShadow.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,13 +114,13 @@
 				2B2E50F2210CE847008CBC3C /* NAMasterViewController.swift */,
 				2B2E5124210D0371008CBC3C /* NAAlbumTableViewCell.swift */,
 				2B2E50F4210CE847008CBC3C /* NADetailViewController.swift */,
+				2B2E5120210CE976008CBC3C /* NAAlbumModel.swift */,
+				2B2E5122210CFAF7008CBC3C /* NARssManager.swift */,
+				2B2E5165210D5561008CBC3C /* NAUIImageView+DropShadow.swift */,
 				2B2E50F6210CE847008CBC3C /* Main.storyboard */,
 				2B2E50F9210CE84A008CBC3C /* Assets.xcassets */,
 				2B2E50FB210CE84A008CBC3C /* LaunchScreen.storyboard */,
 				2B2E50FE210CE84A008CBC3C /* Info.plist */,
-				2B2E5120210CE976008CBC3C /* NAAlbumModel.swift */,
-				2B2E5122210CFAF7008CBC3C /* NAFeedDecoder.swift */,
-				2B2E5165210D5561008CBC3C /* NAUIView+DropShadow.swift */,
 			);
 			path = NikeAlbumViewer;
 			sourceTree = "<group>";
@@ -280,9 +280,9 @@
 				2B2E50F5210CE847008CBC3C /* NADetailViewController.swift in Sources */,
 				2B2E50F3210CE847008CBC3C /* NAMasterViewController.swift in Sources */,
 				2B2E5121210CE976008CBC3C /* NAAlbumModel.swift in Sources */,
-				2B2E5123210CFAF7008CBC3C /* NAFeedDecoder.swift in Sources */,
+				2B2E5123210CFAF7008CBC3C /* NARssManager.swift in Sources */,
 				2B2E5125210D0371008CBC3C /* NAAlbumTableViewCell.swift in Sources */,
-				2B2E5166210D5561008CBC3C /* NAUIView+DropShadow.swift in Sources */,
+				2B2E5166210D5561008CBC3C /* NAUIImageView+DropShadow.swift in Sources */,
 				2B2E50F1210CE847008CBC3C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

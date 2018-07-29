@@ -14,4 +14,6 @@ class NAAlbumTableViewCell: UITableViewCell {
     @IBOutlet var artistLabel: UILabel!
     @IBOutlet var colverImageView: UIImageView!
     
+    var imageUrlString = ""
+    
 }

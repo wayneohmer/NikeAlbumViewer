@@ -1,5 +1,5 @@
 //
-//  NAUIView+DropShadow.swift
+//  NAUIImageView+DropShadow.swift
 //  NikeAlbumViewer
 //
 //  Created by Wayne Ohmer on 7/28/18.
@@ -8,8 +8,9 @@
 
 import UIKit
 
-extension UIView {
+extension UIImageView {
     
+    //Make white artwork look much better.
     func addAlbumCoverDropShadow() {
         let shadowPath = UIBezierPath(rect: self.bounds)
         self.layer.masksToBounds = false
