@@ -8,13 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		2B2E50F1210CE847008CBC3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2E50F0210CE847008CBC3C /* AppDelegate.swift */; };
-		2B2E50F3210CE847008CBC3C /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2E50F2210CE847008CBC3C /* MasterViewController.swift */; };
-		2B2E50F5210CE847008CBC3C /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2E50F4210CE847008CBC3C /* DetailViewController.swift */; };
+		2B2E50F3210CE847008CBC3C /* NAMasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2E50F2210CE847008CBC3C /* NAMasterViewController.swift */; };
+		2B2E50F5210CE847008CBC3C /* NADetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2E50F4210CE847008CBC3C /* NADetailViewController.swift */; };
 		2B2E50F8210CE847008CBC3C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B2E50F6210CE847008CBC3C /* Main.storyboard */; };
 		2B2E50FA210CE84A008CBC3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B2E50F9210CE84A008CBC3C /* Assets.xcassets */; };
 		2B2E50FD210CE84A008CBC3C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B2E50FB210CE84A008CBC3C /* LaunchScreen.storyboard */; };
 		2B2E5108210CE84A008CBC3C /* NikeAlbumViewerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2E5107210CE84A008CBC3C /* NikeAlbumViewerTests.swift */; };
 		2B2E5113210CE84A008CBC3C /* NikeAlbumViewerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2E5112210CE84A008CBC3C /* NikeAlbumViewerUITests.swift */; };
+		2B2E5121210CE976008CBC3C /* NAAlbumModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2E5120210CE976008CBC3C /* NAAlbumModel.swift */; };
+		2B2E5123210CFAF7008CBC3C /* NAFeedDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2E5122210CFAF7008CBC3C /* NAFeedDecoder.swift */; };
+		2B2E5125210D0371008CBC3C /* NAAlbumTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2E5124210D0371008CBC3C /* NAAlbumTableViewCell.swift */; };
+		2B2E5163210D2F68008CBC3C /* testData.json in Resources */ = {isa = PBXBuildFile; fileRef = 2B2E5162210D2F68008CBC3C /* testData.json */; };
+		2B2E5164210D3261008CBC3C /* testData.json in Resources */ = {isa = PBXBuildFile; fileRef = 2B2E5162210D2F68008CBC3C /* testData.json */; };
+		2B2E5166210D5561008CBC3C /* NAUIView+DropShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2E5165210D5561008CBC3C /* NAUIView+DropShadow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,8 +43,8 @@
 /* Begin PBXFileReference section */
 		2B2E50ED210CE847008CBC3C /* NikeAlbumViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NikeAlbumViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B2E50F0210CE847008CBC3C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2B2E50F2210CE847008CBC3C /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
-		2B2E50F4210CE847008CBC3C /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		2B2E50F2210CE847008CBC3C /* NAMasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NAMasterViewController.swift; sourceTree = "<group>"; };
+		2B2E50F4210CE847008CBC3C /* NADetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NADetailViewController.swift; sourceTree = "<group>"; };
 		2B2E50F7210CE847008CBC3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2B2E50F9210CE84A008CBC3C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2B2E50FC210CE84A008CBC3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +55,11 @@
 		2B2E510E210CE84A008CBC3C /* NikeAlbumViewerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NikeAlbumViewerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B2E5112210CE84A008CBC3C /* NikeAlbumViewerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NikeAlbumViewerUITests.swift; sourceTree = "<group>"; };
 		2B2E5114210CE84A008CBC3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B2E5120210CE976008CBC3C /* NAAlbumModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NAAlbumModel.swift; sourceTree = "<group>"; };
+		2B2E5122210CFAF7008CBC3C /* NAFeedDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NAFeedDecoder.swift; sourceTree = "<group>"; };
+		2B2E5124210D0371008CBC3C /* NAAlbumTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NAAlbumTableViewCell.swift; sourceTree = "<group>"; };
+		2B2E5162210D2F68008CBC3C /* testData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = testData.json; sourceTree = "<group>"; };
+		2B2E5165210D5561008CBC3C /* NAUIView+DropShadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NAUIView+DropShadow.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,12 +111,16 @@
 			isa = PBXGroup;
 			children = (
 				2B2E50F0210CE847008CBC3C /* AppDelegate.swift */,
-				2B2E50F2210CE847008CBC3C /* MasterViewController.swift */,
-				2B2E50F4210CE847008CBC3C /* DetailViewController.swift */,
+				2B2E50F2210CE847008CBC3C /* NAMasterViewController.swift */,
+				2B2E5124210D0371008CBC3C /* NAAlbumTableViewCell.swift */,
+				2B2E50F4210CE847008CBC3C /* NADetailViewController.swift */,
 				2B2E50F6210CE847008CBC3C /* Main.storyboard */,
 				2B2E50F9210CE84A008CBC3C /* Assets.xcassets */,
 				2B2E50FB210CE84A008CBC3C /* LaunchScreen.storyboard */,
 				2B2E50FE210CE84A008CBC3C /* Info.plist */,
+				2B2E5120210CE976008CBC3C /* NAAlbumModel.swift */,
+				2B2E5122210CFAF7008CBC3C /* NAFeedDecoder.swift */,
+				2B2E5165210D5561008CBC3C /* NAUIView+DropShadow.swift */,
 			);
 			path = NikeAlbumViewer;
 			sourceTree = "<group>";
@@ -114,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				2B2E5107210CE84A008CBC3C /* NikeAlbumViewerTests.swift */,
+				2B2E5162210D2F68008CBC3C /* testData.json */,
 				2B2E5109210CE84A008CBC3C /* Info.plist */,
 			);
 			path = NikeAlbumViewerTests;
@@ -232,6 +248,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B2E5164210D3261008CBC3C /* testData.json in Resources */,
 				2B2E50FD210CE84A008CBC3C /* LaunchScreen.storyboard in Resources */,
 				2B2E50FA210CE84A008CBC3C /* Assets.xcassets in Resources */,
 				2B2E50F8210CE847008CBC3C /* Main.storyboard in Resources */,
@@ -242,6 +259,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B2E5163210D2F68008CBC3C /* testData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,8 +277,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B2E50F5210CE847008CBC3C /* DetailViewController.swift in Sources */,
-				2B2E50F3210CE847008CBC3C /* MasterViewController.swift in Sources */,
+				2B2E50F5210CE847008CBC3C /* NADetailViewController.swift in Sources */,
+				2B2E50F3210CE847008CBC3C /* NAMasterViewController.swift in Sources */,
+				2B2E5121210CE976008CBC3C /* NAAlbumModel.swift in Sources */,
+				2B2E5123210CFAF7008CBC3C /* NAFeedDecoder.swift in Sources */,
+				2B2E5125210D0371008CBC3C /* NAAlbumTableViewCell.swift in Sources */,
+				2B2E5166210D5561008CBC3C /* NAUIView+DropShadow.swift in Sources */,
 				2B2E50F1210CE847008CBC3C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -435,7 +457,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = UC39945CUV;
+				DEVELOPMENT_TEAM = EKUA3NG8A6;
 				INFOPLIST_FILE = NikeAlbumViewer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -453,7 +475,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = UC39945CUV;
+				DEVELOPMENT_TEAM = EKUA3NG8A6;
 				INFOPLIST_FILE = NikeAlbumViewer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

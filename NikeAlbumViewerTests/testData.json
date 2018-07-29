@@ -1,0 +1,101 @@
+{
+    "feed": {
+        "title": "Top Albums",
+        "id": "https://rss.itunes.apple.com/api/v1/us/apple-music/top-albums/all/3/explicit.json",
+        "author": {
+            "name": "iTunes Store",
+            "uri": "http://wwww.apple.com/us/itunes/"
+        },
+        "links": [
+                  {
+                  "self": "https://rss.itunes.apple.com/api/v1/us/apple-music/top-albums/all/3/explicit.json"
+                  },
+                  {
+                  "alternate": "https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewTop?genreId=34&popId=82&app=music"
+                  }
+                  ],
+        "copyright": "Copyright 2018 Apple Inc. Alle Rechte vorbehalten.",
+        "country": "us",
+        "icon": "http://itunes.apple.com/favicon.ico",
+        "updated": "2018-07-28T03:52:07.000-07:00",
+        "results": [
+                    {
+                    "artistName": "G Herbo & Southside",
+                    "id": "1413595651",
+                    "releaseDate": "2018-07-27",
+                    "name": "Swervo",
+                    "kind": "album",
+                    "copyright": "℗ 2018 Machine Entertainment Group",
+                    "artistId": "1036753321",
+                    "artistUrl": "https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewCollaboration?cc=us&ids=1036753321-292461&app=music",
+                    "artworkUrl100": "https://is2-ssl.mzstatic.com/image/thumb/Music118/v4/0a/06/a2/0a06a23f-468d-78a8-ee3e-ef16e420f1f3/contsched.twcnaiog.jpg/200x200bb.png",
+                    "genres": [
+                               {
+                               "genreId": "1073",
+                               "name": "Hip-Hop",
+                               "url": "https://itunes.apple.com/us/genre/id1073"
+                               },
+                               {
+                               "genreId": "34",
+                               "name": "Music",
+                               "url": "https://itunes.apple.com/us/genre/id34"
+                               },
+                               {
+                               "genreId": "18",
+                               "name": "Hip-Hop/Rap",
+                               "url": "https://itunes.apple.com/us/genre/id18"
+                               }
+                               ],
+                    "url": "https://itunes.apple.com/us/album/swervo/1413595651?app=music"
+                    },
+                    {
+                    "artistName": "Queen Naija",
+                    "id": "1413905925",
+                    "releaseDate": "2018-07-27",
+                    "name": "Queen Naija - EP",
+                    "kind": "album",
+                    "copyright": "Capitol Records; ℗ 2018 Queen Naija, under exclusive license to UMG Recordings, Inc.",
+                    "artistId": "1392861271",
+                    "artistUrl": "https://itunes.apple.com/us/artist/queen-naija/1392861271?app=music",
+                    "artworkUrl100": "https://is2-ssl.mzstatic.com/image/thumb/Music118/v4/95/c0/65/95c06543-1926-1086-f213-7863d4f5bc10/00602567799870.rgb.jpg/200x200bb.png",
+                    "genres": [
+                               {
+                               "genreId": "15",
+                               "name": "R&B/Soul",
+                               "url": "https://itunes.apple.com/us/genre/id15"
+                               },
+                               {
+                               "genreId": "34",
+                               "name": "Music",
+                               "url": "https://itunes.apple.com/us/genre/id34"
+                               }
+                               ],
+                    "url": "https://itunes.apple.com/us/album/queen-naija-ep/1413905925?app=music"
+                    },
+                    {
+                    "artistName": "Future",
+                    "id": "1407068657",
+                    "releaseDate": "2018-07-06",
+                    "name": "BEASTMODE 2",
+                    "kind": "album",
+                    "copyright": "℗ 2018 Epic Records, a division of Sony Music Entertainment with Freebandz",
+                    "artistId": "128050210",
+                    "artistUrl": "https://itunes.apple.com/us/artist/future/128050210?app=music",
+                    "artworkUrl100": "https://is2-ssl.mzstatic.com/image/thumb/Music115/v4/0f/41/7b/0f417b33-e253-d088-aa1a-1e441a3bea0f/886447204764.jpg/200x200bb.png",
+                    "genres": [
+                               {
+                               "genreId": "18",
+                               "name": "Hip-Hop/Rap",
+                               "url": "https://itunes.apple.com/us/genre/id18"
+                               },
+                               {
+                               "genreId": "34",
+                               "name": "Music",
+                               "url": "https://itunes.apple.com/us/genre/id34"
+                               }
+                               ],
+                    "url": "https://itunes.apple.com/us/album/beastmode-2/1407068657?app=music"
+                    }
+                    ]
+    }
+}
