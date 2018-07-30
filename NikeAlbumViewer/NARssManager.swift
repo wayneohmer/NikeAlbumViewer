@@ -18,7 +18,7 @@ class NARSSManager {
         //Error checking is minimal. We get an array or we don't. Master VC handles the error.
         //In a producion app I would check the error and the response status codes and least log them.
         //Better yet, resond to some situations, like http status 5xx by retring after a certain time period.
-        //Really got time? Implement Circuit breaker pattern and a fail closure that allows more intelligent user facing error messages.  
+        //Really got time? Implement circuit breaker pattern and a fail closure that allows more intelligent user facing error messages.
         let dataTask = defaultSession.dataTask(with: feedUrl) { data, response, error in
             guard let jsonData = data else {
                 closure([NAAlbumModel]())
@@ -31,17 +31,17 @@ class NARSSManager {
     
     class func getAlbumsFrom(json:Data) -> [NAAlbumModel] {
         
-        var retunArray = [NAAlbumModel]()
+        var returnArray = [NAAlbumModel]()
         
         do {
             let rss = try JSONDecoder().decode(NARSS.self, from: json)
             for result in rss.feed.results {
-                retunArray.append(NAAlbumModel.init(result: result))
+                returnArray.append(NAAlbumModel.init(result: result))
             }
         } catch {
             NSLog("Could not decode JSON - \(error.localizedDescription)")
         }
-        return retunArray
+        return returnArray
     }
 
 }

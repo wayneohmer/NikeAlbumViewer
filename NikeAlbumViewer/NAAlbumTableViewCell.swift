@@ -12,7 +12,7 @@ class NAAlbumTableViewCell: UITableViewCell {
 
     @IBOutlet var nameLabel: UILabel!
     @IBOutlet var artistLabel: UILabel!
-    @IBOutlet var colverImageView: UIImageView!
+    @IBOutlet var artworkImageView: UIImageView!
     
     var imageUrlString = ""
     

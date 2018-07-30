@@ -15,7 +15,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        // Crash operators in Apple template code... The app is a brick if any of this fails, so...
         let splitViewController = window!.rootViewController as! UISplitViewController
+        //This is non standard, but I thought is looked better in iPad.
         splitViewController.preferredDisplayMode = .allVisible
         let navigationController = splitViewController.viewControllers[splitViewController.viewControllers.count-1] as! UINavigationController
         navigationController.topViewController!.navigationItem.leftBarButtonItem = splitViewController.displayModeButtonItem

@@ -29,7 +29,7 @@ class NAMasterViewController: UITableViewController {
         
         if let split = splitViewController {
             let controllers = split.viewControllers
-            if let navController = controllers[controllers.count-1] as? UINavigationController {
+            if !controllers.isEmpty, let navController = controllers[controllers.count-1] as? UINavigationController {
                 detailViewController = navController.topViewController as? NADetailViewController
             }
         }
@@ -63,7 +63,7 @@ class NAMasterViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showDetail" {
             if let indexPath = tableView.indexPathForSelectedRow {
-                //Crash operators in Apple template code. Not a fan, but if this fails the app is pretty much hosed, so...
+                //Crash operators in Apple template code. Not a fan, but if this fails the app is pretty much dead, so...
                 let controller = (segue.destination as! UINavigationController).topViewController as! NADetailViewController
                 controller.album = self.albums[indexPath.row]
                 controller.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem
@@ -88,15 +88,15 @@ class NAMasterViewController: UITableViewController {
         }
         cell.nameLabel.text = self.albums[indexPath.row].name
         cell.artistLabel.text = self.albums[indexPath.row].artistName
-        cell.colverImageView.addAlbumCoverDropShadow()
+        cell.artworkImageView.addAlbumCoverDropShadow()
         //Store the url for later verification.
         cell.imageUrlString = self.albums[indexPath.row].artworkUrl?.absoluteString ?? ""
         
         self.albums[indexPath.row].requestImage(){ [weak cell] (image, urlString) in
             DispatchQueue.main.async {
-                // Make sure image url is still the url that was requested. Reused cells can have the wrong image displayed we do not verify.
+                // Make sure image url is still the url that was requested. Reused cells can have the wrong image displayed if we do not verify.
                 if cell?.imageUrlString == urlString {
-                    cell?.colverImageView.image = image
+                    cell?.artworkImageView.image = image
                 }
             }
         }

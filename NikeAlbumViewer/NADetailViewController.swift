@@ -29,19 +29,20 @@ class NADetailViewController: UIViewController {
         //Emulate the store button look. This constant could be stored elsewhere.
         self.storeButton.layer.cornerRadius = 5
         
-        //Ask for the image. If its still fetching, show it when it is finished.
+        //Ask for the image. If it's still fetching, show it when it is finished.
         self.album?.requestImage() { [weak self] (image, _) in
             DispatchQueue.main.async {
                 self?.imageView.image = image
             }
         }
-        //This is redundant. A blank title just looked wrong.
+        //This is redundant. The album name is in textView. A blank Nav bar title just looked wrong.
         self.navigationItem.title = self.album?.name ?? ""
         
         let attributedText = NSMutableAttributedString(string: "")
         
         //Yikes! Static user facing strings that are not localized!
         //There would be a better place to put these in a production app.
+        //I'm leaving the heading in if the data is blank intentionally. Design decision.
         attributedText.append(self.buildTextViewElement(heading: "\(album?.name ?? "")\n", detail:""))
         attributedText.append(self.buildTextViewElement(heading: "Artist", detail: album?.artistName ?? ""))
         attributedText.append(self.buildTextViewElement(heading: "Genre", detail: album?.genre ?? ""))
@@ -56,11 +57,10 @@ class NADetailViewController: UIViewController {
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         
-        //This is here becaue bounds needs to be set before the shadow can be added.
+        //This is in viewDidLayoutSubviews becaue bounds needs to be set before the shadow can be added.
         self.imageView.addAlbumCoverDropShadow()
         
-        // fixes the annoying scroll issue where the textView is not rendered scrolled to the top
-        // https://stackoverflow.com/a/34248700
+        //Make sure textView is srolled to the top. 
         self.textView.setContentOffset(.zero, animated: false)
     }
     

@@ -77,7 +77,7 @@ class NAAlbumModel {
         if let image = self.image, let url = self.artworkUrl {
             closure(image, url.absoluteString)
         } else {
-            //Don't save closure if fetch failed. There should never have more then 2 open requests.
+            //Don't save closure if fetch failed and there should never be more then 2 open requests.
             if !self.fetchFailed && self.requestImageClosures.count < 2 {
                 self.requestImageClosures.append(closure)
             }
@@ -85,7 +85,7 @@ class NAAlbumModel {
     }
     
     //In a production app I would implement an image cache system that used the cachesDirectory on disk.
-    //This saves RAM and lets the OS handle the purging duties. I have an example that I implemented at Spokin.
+    //This saves RAM and lets the OS handle the purging duties. I have an example that I implemented at a previous job.
     //We have a fixed number of images so keeping them in memory is safe.
     func fetchImage(){
         guard let url = self.artworkUrl else {
@@ -95,7 +95,7 @@ class NAAlbumModel {
         self.fetchFailed = false
         let defaultSession = URLSession(configuration: URLSessionConfiguration.default)
         let dataTask = defaultSession.dataTask(with: url) { data, response, error in
-            //No error identification or retries.
+            //No error identification or retries. A production app would be more robust.  
             if let imageData = data, let image = UIImage(data: imageData) {
                 self.image = image
                 for closure in self.requestImageClosures {
