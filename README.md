@@ -6,7 +6,7 @@ I used a simple URLSession to fetch the JSON and Swift Decodable to consume it. 
 
 **Layout**
 
-I decided to use a split view controller because the implementation of the intitial table view is exactly the same as not using one. We get a lot of rotation and iPad functionality for free. I used an un-editable text view on the detail view to handle scrolling. This is an unusual choice but it easily accommodated different screen and text sizes without haveing to use a scrollView. 
+I decided to use a UISplitViewController instead of a plain UITableViewController because the implementation of the intitial tableView is mostly the same and we get a lot of rotation and iPad functionality for free. I used an un-editable text view on the detail view to handle scrolling. This is an unusual choice but it easily accommodated different screen and text sizes without haveing to use a scrollView. 
 
 **Extras**
 
